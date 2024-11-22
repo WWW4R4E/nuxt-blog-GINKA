@@ -3,7 +3,7 @@ import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
   plugins: [
     '~/plugins/axios.ts',
-    '~/plugins/store.ts',
+    '~/plugins/pinia.ts',
   ],
 
   nitro: {

@@ -24,7 +24,7 @@
             <h2>我的文章</h2>
             <ul class="article-list">
                 <li v-for="article in articles" :key="article.id">
-                    <a :href="'/post/' + article.id">{{ article.title }}</a>
+                    <a :href="'/posts/' + article.id">{{ article.title }}</a>
                 </li>
             </ul>
     <div class="user-buttons">

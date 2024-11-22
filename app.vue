@@ -1,5 +1,6 @@
 <template>
-    <NuxtPage />
+  <NuxtLayout />
+  <NuxtPage />
 </template>
 <script>
 </script>
@@ -9,5 +10,9 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  }
+}
+
+body {
+  margin: 0;
+}
 </style>

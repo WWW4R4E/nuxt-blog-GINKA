@@ -1,7 +1,7 @@
 <template>
   <div class="login-box">
     <h2>Login</h2>
-    <form @submit.prevent="login">
+    <form @submit.prevent="login" class="form-container">
       <div class="input-group">
         <label for="username">Username:</label>
         <input type="text" id="username" v-model="username" required autocomplete="username" />
@@ -60,7 +60,18 @@ async function login() {
   box-sizing: border-box;
 }
 
-body, html {
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  /* 使子元素宽度占满父容器 */
+  gap: 1rem;
+  /* 子元素之间的间距 */
+}
+
+
+body,
+html {
   height: 100%;
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
@@ -70,8 +81,6 @@ body, html {
 }
 
 .login-box {
-  width: 100%;
-  max-width: 400px;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
